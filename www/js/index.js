@@ -26,6 +26,17 @@ document.addEventListener("deviceready", onDeviceReady, false);
                     });
                 }
 
+function backKeyDown() {
+    navigator.notification.confirm("Are you sure you want to exit?", onConfirm, "Please Confirm", "Yes,No"); 
+}
+function onConfirm(button) {
+    if(button==2){//If User selected No, then we just do nothing
+        return;
+    }else{
+        navigator.app.exitApp();// Otherwise we quit the app.
+    }
+}
+
 
 function onLocationSuccess(position) {
     
