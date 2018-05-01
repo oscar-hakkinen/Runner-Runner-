@@ -87,17 +87,8 @@
                 <a href="#pagetwo" data-role="button">Start</a>
                 <a href="#pagethree" data-role="button">Maps</a>    
                 <a href="#options" data-role="button">options</a>  
-                <a href="exitApp" data-role="button">Quit</a>  
-                <script>
-                document.addEventListener("deviceready", onDeviceReady, false);
-
-                function onDeviceReady() {
-                    // alert("deviceready");
-                    document.getElementById('exitApp').addEventListener('click', function() {
-                        navigator.app.exitApp();
-                    });
-                }
-                </script>
+                <a href="test" data-role="button">Quit</a> 
+                <button id="exitApp">Exit</button>
             </div>
         </div>    
         <div data-role="page" id="pagetwo"> <!-- info page-->

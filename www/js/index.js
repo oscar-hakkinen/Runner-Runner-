@@ -17,6 +17,15 @@ $(document).on( "pageinit", "#pagethree", function() {
     
 });
 
+document.addEventListener("deviceready", onDeviceReady, false);
+
+                function onDeviceReady() {
+                    // alert("deviceready");
+                    document.getElementById('exitApp').addEventListener('click', function() {
+                        navigator.app.exitApp();
+                    });
+                }
+
 
 function onLocationSuccess(position) {
     
