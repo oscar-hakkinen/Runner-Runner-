@@ -27,7 +27,7 @@ function onLocationSuccess(position) {
     path.push(loc);
     map = new google.maps.Map(document.getElementById('map'), {
         center: loc,
-        zoom: 13,
+        zoom: 16,
         disableDefaultUI: true
     });
     
@@ -43,7 +43,7 @@ function onLocationSuccess(position) {
     var marker = new google.maps.Marker({
           map: map,
           draggable: false,
-          animation: google.maps.Animation.DROP,
+         
         
           position: {lat:position.coords.latitude, lng:position.coords.longitude}
         });
