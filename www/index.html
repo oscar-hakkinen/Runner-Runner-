@@ -16,22 +16,12 @@
         
         <style>
             
-           body  {
-                text-align: center;  
-                  }  
-            
            .background {
                 min-width: 100%;
                 min-height: 100%;
                 background:black;
                         }
-            
-           #pageone {
-                background: transparent;
-                font: 15px helvetica, sans-serif;
-                text-shadow: 2px 2px 3px white;
-                        }
-            
+     
            .ui-content {
                 background: transparent;
                 font: 15px Helvetica, sans-serif;
@@ -42,23 +32,33 @@
                 background-color: transparent;
             }
             
+           body  {
+                text-align: center;  
+                  }      
+            
            H1 {
                 color: white;
                 font: Helvetica, sans-serif;
                 background:rgba(255, 255, 255, 0.2) ;
                }
-              
-           p {
-                color: whitesmoke;
-                font: 18px;
-                background:rgba(237, 218, 187, 0.2) ;
-              }
             
            H2 {
                 color: white;
                 font: Helvetica, sans-serif;
                 background:rgba(255, 255, 255, 0.2) ;
                }
+            
+           p {
+                color: whitesmoke;
+                font: 18px;
+                background:rgba(237, 218, 187, 0.2) ;
+              }    
+            
+           #pageone {
+                background: transparent;
+                font: 15px helvetica, sans-serif;
+                text-shadow: 2px 2px 3px white;
+                        }
             
            #map {
                 height: 100%;
@@ -85,7 +85,6 @@
                 <H1>Runner Runner!</H1>
                 
                 <a href="#pagetwo" data-role="button">Start</a>
-                <a href="#pagethree" data-role="button">Maps</a>    
                 <a href="#options" data-role="button">options</a>  
                 <button id="exitApp">Exit</button>
             </div>
@@ -95,18 +94,19 @@
                 <div data-role="main" class="ui-content">
                     <H1>Information</H1>
                    
+                     <a href="#pagethree" data-role="button">Maps</a>    
+                    
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus, magna id consectetur sagittis, mi orci pellentesque est, eget ultricies dolor erat quis quam. Aenean consequat ligula eu vulputate feugiat. Etiam semper bibendum dictum. Quisque sit amet dignissim sem. In ultricies urna eu libero accumsan, in molestie sapien volutpat. Nunc venenatis placerat pulvinar. Suspendisse luctus condimentum felis in bibendum. Vestibulum eu turpis quis erat interdum congue. Quisque laoreet ligula risus, eget ornare tellus aliquam vitae. Duis vitae dolor condimentum, rhoncus diam in, venenatis ligula. Nullam id mi at nisi maximus faucibus at ac nunc. Nam et elit pulvinar, egestas orci a, dapibus ante. Proin a magna quis metus gravida cursus. Praesent ullamcorper risus ac ex fermentum tempor.</p>
                 </div>
 
                     <div data-role="panel" id="myPanel2" data-display="overlay">
                         <h2>Navigation Bar</h2>
                             <a href="#pageone" data-role="button">Main page</a>
-                            <a href="#pagethree" data-role="button">Maps</a>
+
                     </div>
                     <div data-role="footer" data-position="fixed">
                         <a href="#myPanel2">Navigate</a>
                          <a href="#pageone" data-role="button">Main page</a>
-                            <a href="#pagethree" data-role="button">Maps</a>
                     </div>
         </div> 
         <div data-role="page" id="pagethree" >
@@ -142,13 +142,11 @@
                     <div data-role="panel" id="optionspanel" data-display="overlay">
                         <h2>Navigation Bar</h2>
                             <a href="#pageone" data-role="button">Main page</a>
-                            <a href="#pagethree" data-role="button">Maps</a>
                     </div>
             
                     <div data-role="footer" data-position="fixed">
                         <a href="#optionspanel">Navigate</a>
                          <a href="#pageone" data-role="button">Main page</a>
-                            <a href="#pagethree" data-role="button">Maps</a>
                     
         </div> 
                     </div> 
