@@ -22,7 +22,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
                 function onDeviceReady() {
                     // alert("deviceready");
                     document.getElementById('exitApp').addEventListener('click', function() {
-                        navigator.app.unload();
+                        navigator.app.exitApp();
                     });
                 }
 
