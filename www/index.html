@@ -28,6 +28,16 @@
            .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
                 background-color: transparent;
             }
+           .custom-label-flipswitch.ui-flipswitch .ui-btn.ui-flipswitch-on {
+    text-indent: -15.4em;
+                text-align: left;  
+}
+.custom-label-flipswitch.ui-flipswitch .ui-flipswitch-off {
+    text-indent: 2.5em;
+}
+            
+            
+            
            body  {
                 text-align: center;  
                   }          
@@ -63,6 +73,8 @@
                  background:rgba(64, 64, 64, 1) ;
                 
             }
+            
+
         </style>  
     </head>
     
@@ -111,7 +123,7 @@
                         </div>
                     </div>
                     
-                     <H2>Resources:</H2>
+                     <H2>Resources:0</H2>
                 </div>
 
                     <div data-role="panel" id="myPanel2" data-display="overlay">
@@ -172,7 +184,9 @@
                 <div data-role="main" class="ui-content">
                     <H1>Options</H1>
                    
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus, magna id consectetur sagittis, mi orci pellentesque est, eget ultricies dolor erat quis quam. Aenean consequat ligula eu vulputate feugiat. Etiam semper bibendum dictum. Quisque sit amet dignissim sem. In ultricies urna eu libero accumsan, in molestie sapien volutpat. Nunc venenatis placerat pulvinar. Suspendisse luctus condimentum felis in bibendum. Vestibulum eu turpis quis erat interdum congue. Quisque laoreet ligula risus, eget ornare tellus aliquam vitae. Duis vitae dolor condimentum, rhoncus diam in, venenatis ligula. Nullam id mi at nisi maximus faucibus at ac nunc. Nam et elit pulvinar, egestas orci a, dapibus ante. Proin a magna quis metus gravida cursus. Praesent ullamcorper risus ac ex fermentum tempor.</p>
+    
+
+                    
                 </div>
             
                     <div data-role="panel" id="optionspanel" data-display="overlay">
@@ -181,6 +195,21 @@
                             <a href="#scavPage" data-role="button">New Scavenge</a> 
                             <a href="#pagetwo" data-role="button">Upgrade Page</a>
                              <a href="#pageone" data-role="button">Exit</a>
+                          
+                        
+                                <input type="button" value="Delete Save">
+                 
+                                <label for="flip-checkbox-1"><p>Stay awake mode: 
+                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
+                                (The stay awake mode keeps your device from going to sleep mode. Warning this can affect your battery life.)</p>   
+                                </label>
+    
+                          
+
+         
+                                <label for="flip-checkbox-2"><p>distance units: 
+                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Meters" data-off-text="Miles" data-wrapper-class="custom-label-flipswitch"></p>
+                                </label>
                     </div>
             
                     <div data-role="footer" data-position="fixed">
