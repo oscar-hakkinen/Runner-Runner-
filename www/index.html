@@ -28,16 +28,6 @@
            .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
                 background-color: transparent;
             }
-           .custom-label-flipswitch.ui-flipswitch .ui-btn.ui-flipswitch-on {
-    text-indent: -15.4em;
-                text-align: left;  
-}
-.custom-label-flipswitch.ui-flipswitch .ui-flipswitch-off {
-    text-indent: 2.5em;
-}
-            
-            
-            
            body  {
                 text-align: center;  
                   }          
@@ -69,7 +59,7 @@
                 height: 100%; 
                 padding: 0; 
             }  
-           #myPanel2, #myPanel3, #optionspanel, #scavPanel {
+           #myPanel2, #myPanel3, #optionspanel, #scavPanel, #navoptions, #navoptions2, #navoptions3, #navoptions4, #navoptionsmain {
                  background:rgba(64, 64, 64, 1) ;
                 
             }
@@ -90,9 +80,23 @@
                 <H1>Runner Runner!</H1>
                 
                 <a href="#pagetwo" data-role="button">Start</a>
-                <a href="#options" data-role="button">options</a>  
+                <a href="#navoptionsmain" data-role="button">options</a>  
                 <button id="exitApp">Exit</button>
             </div>
+            
+             <div data-role="panel" id="navoptionsmain" data-display="overlay">
+                                <label for="flip-checkbox-1"><p>Stay awake mode: 
+                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
+                                (The stay awake mode keeps your device from going to sleep mode. Warning this can affect your battery life.)</p>   
+                                </label>
+    
+                                <label for="flip-checkbox-2"><p>distance units: 
+                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Km" data-off-text="Miles" data-wrapper-class="custom-label-flipswitch"></p>
+                                </label>
+                        
+                                <input type="button" value="Delete Save"> 
+                                </div>
+            
         </div>    
         <div data-role="page" id="pagetwo"> <!-- Scavenge page -->
             
@@ -129,9 +133,23 @@
                     <div data-role="panel" id="myPanel2" data-display="overlay">
                         <h2>Navigation Bar</h2>
                             <a href="#scavPage" data-role="button">New Scavenge</a> 
-                            <a href="#options" data-role="button">Options</a>  
+                            <a href="#navoptions2" data-role="button">Options</a>  
                              <a href="#pageone" data-role="button">Exit</a>
                     </div>
+            
+                     <div data-role="panel" id="navoptions2" data-display="overlay">
+                                <label for="flip-checkbox-1"><p>Stay awake mode: 
+                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
+                                (The stay awake mode keeps your device from going to sleep mode. Warning this can affect your battery life.)</p>   
+                                </label>
+    
+                                <label for="flip-checkbox-2"><p>distance units: 
+                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Km" data-off-text="Miles" data-wrapper-class="custom-label-flipswitch"></p>
+                                </label>
+                        
+                                <input type="button" value="Delete Save">   
+                                </div>
+            
                     <div data-role="footer" data-position="fixed">
                         <a href="#myPanel2">Navigate</a>
                     </div>
@@ -150,15 +168,27 @@
                         <h2>Navigation Bar</h2>
                             <a href="#scavPage" data-role="button">New Scavenge</a> 
                             <a href="#pagetwo" data-role="button">Upgrade Page</a>
-                            <a href="#options" data-role="button">Options</a>  
+                            <a href="#navoptions3" data-role="button">Options</a>  
                              <a href="#pageone" data-role="button">Exit</a>
                     </div> 
              
+                     <div data-role="panel" id="navoptions3" data-display="overlay">
+                                <label for="flip-checkbox-1"><p>Stay awake mode: 
+                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
+                                (The stay awake mode keeps your device from going to sleep mode. Warning this can affect your battery life.)</p>   
+                                </label>
+    
+                                <label for="flip-checkbox-2"><p>distance units: 
+                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Km" data-off-text="Miles" data-wrapper-class="custom-label-flipswitch"></p>
+                                </label>
+                        
+                                <input type="button" value="Delete Save">   
+                                </div>    
+                
                     <div data-role="footer" data-position="fixed">
                         <a href="#myPanel3">Navigate</a>
                     </div>
         </div>
-        
         <div data-role="page" id="scavPage"> <!-- Scavenge page -->
             
                 <div data-role="main" class="ui-content">
@@ -172,9 +202,23 @@
                     <div data-role="panel" id="scavPanel" data-display="overlay">
                         <h2>Navigation Bar</h2>
                             <a href="#pagetwo" data-role="button">Upgrade Page</a>
-                            <a href="#options" data-role="button">Options</a>  
+                            <a href="#navoptions4" data-role="button">Options</a>  
                              <a href="#pageone" data-role="button">Exit</a>
                     </div>
+            
+                     <div data-role="panel" id="navoptions4" data-display="overlay">
+                                <label for="flip-checkbox-1"><p>Stay awake mode: 
+                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
+                                (The stay awake mode keeps your device from going to sleep mode. Warning this can affect your battery life.)</p>   
+                                </label>
+    
+                                <label for="flip-checkbox-2"><p>distance units: 
+                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Km" data-off-text="Miles" data-wrapper-class="custom-label-flipswitch"></p>
+                                </label>
+                        
+                                <input type="button" value="Delete Save">   
+                                </div>
+            
                     <div data-role="footer" data-position="fixed">
                         <a href="#scavPanel">Navigate</a>
                     </div>
@@ -194,28 +238,30 @@
                            
                             <a href="#scavPage" data-role="button">New Scavenge</a> 
                             <a href="#pagetwo" data-role="button">Upgrade Page</a>
-                             <a href="#pageone" data-role="button">Exit</a>
-                          
+                            <a href="#navoptions" data-role="button">options</a>
+                            <a href="#pageone" data-role="button">Exit</a>
+                            
                         
-                                <input type="button" value="Delete Save">
-                 
+                             
+                    </div>
+               
+                                <div data-role="panel" id="navoptions" data-display="overlay">
                                 <label for="flip-checkbox-1"><p>Stay awake mode: 
                                 <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
                                 (The stay awake mode keeps your device from going to sleep mode. Warning this can affect your battery life.)</p>   
                                 </label>
     
-                          
-
-         
                                 <label for="flip-checkbox-2"><p>distance units: 
-                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Meters" data-off-text="Miles" data-wrapper-class="custom-label-flipswitch"></p>
+                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Km" data-off-text="Miles" data-wrapper-class="custom-label-flipswitch"></p>
                                 </label>
-                    </div>
+                        
+                                <input type="button" value="Delete Save">   
+                                </div>
             
                     <div data-role="footer" data-position="fixed">
                         <a href="#optionspanel">Navigate</a>
                     
-        </div> 
+                    </div> 
                     </div> 
         
         
