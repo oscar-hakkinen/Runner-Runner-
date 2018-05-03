@@ -8,7 +8,7 @@ var loc;
 var path = [];
 
 
-       
+    
 
 $(document).on( "pageinit", "#pagethree", function() {
     
