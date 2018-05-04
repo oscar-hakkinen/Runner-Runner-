@@ -137,13 +137,13 @@ function onLocationSuccess(position) {
     currentlat = position.coords.latitude;
     currentLong = position.coords.longitude;
     
-    // alert(currentlat + ", " + currentLong);
+       alert(currentlat + ", " + currentLong);
+       alert(prevLat + ", " + prevLong);
+     
+     document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
+     document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;    
      mapresourcescript++;
      resourcescript++;    
-     
-     mapresourcescript++;
-     document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
-     document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
     //work out distance between prev and current
     //only if prev has a value
     
