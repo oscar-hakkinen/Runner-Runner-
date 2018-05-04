@@ -17,7 +17,7 @@ var foodscript = 0;
 var barricadescript = 0;
 var armoryscript = 0;
 var scrapscript = 0;
-var resourcescript = 15;
+var resourcescript = 0;
 var mapresourcescript = 1;
                         
 
@@ -61,6 +61,7 @@ var mapresourcescript = 1;
                        resourcescript--;    
                         }     
                     });
+     //resource upgrade test 
                           $("#resourceUpgrade").click(function(){
                      document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;
                         if(resourcescript<400){
@@ -75,24 +76,26 @@ var mapresourcescript = 1;
 
 
 
-
+$(document).on( "pageinit", "#scavResults", function() { 
+ mapresourcescript = 0
+});
 
 
  $(document).on( "pageinit", "#pagethree", function() {
     
      
   
-$("#mapResourceUpgrade").click(function(){
-                     document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
-                     document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
-                     if(mapresourcescript<400){
-                            
-                        mapresourcescript++;
-                        resourcescript++;    
-                             
-                        }
-           alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong));
-                    });
+//$("#mapResourceUpgrade").click(function(){
+  //                   document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
+    //                 document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
+    //               if(mapresourcescript<400){
+    //                        
+    //                    mapresourcescript++;
+    //                    resourcescript++;    
+    //                         
+    //                   }
+    //       alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong));
+    //                });
 
 
 function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
@@ -140,7 +143,7 @@ function onLocationSuccess(position) {
      // alert(currentlat + ", " + currentLong);
      //  alert(prevLat + ", " + prevLong);
        
-     document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
+     document.getElementById("mapResourceAmount").innerHTML = "You gained " + mapresourcescript + " resources.";
      document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;    
      mapresourcescript++;
      resourcescript++;    
