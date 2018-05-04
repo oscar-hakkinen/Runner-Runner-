@@ -23,14 +23,8 @@ var mapresourcescript = 1;
 var bgColor = 0;
 
 
-//exit button function
-function onDeviceReady() {
-                    document.getElementById('exitApp').addEventListener('click', function() {
-                        navigator.app.exitApp();
-                    });
-                }
      
- $(document).ready(function(){
+$(document).ready(function(){
                         
                         $("#themeChanger").click(function(){
                         if (bgColor == 1){
@@ -196,11 +190,18 @@ function onDeviceReady() {
       
                           
                 });
+$(document).on( "pageinit", "#pageone", function() { 
+ 
+//exit button function
+function onDeviceReady() {
+                    document.getElementById('exitApp').addEventListener('click', function() {
+                        navigator.app.exitApp();
+                    });
+                }
+});
 $(document).on( "pageinit", "#pagetwo", function() { 
  mapresourcescript = 0
 });
-
-
 $(document).on( "pageinit", "#pagethree", function() {
     
      
