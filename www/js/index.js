@@ -67,7 +67,7 @@ var mapresourcescript = 1;
                         resourcescript++;
                         }     
                     });
-                           
+                          
                 });
 
  $(document).on( "pageinit", "#pagethree", function() {
@@ -96,17 +96,9 @@ function onLocationSuccess(position) {
     
     //work out distance between prev and current
     //only if prev has a value
+   
+  
 
- $("#mapResourceUpgrade").click(function(){
-                     document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
-                                 document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
-                        if(mapresourcescript<400){
-                        mapresourcescript++;
-                        resourcescript++;    
-                           
-    alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong).toFixed(5));    
-                        }     
-                    });
 
 
 function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
@@ -165,6 +157,17 @@ function deg2rad(deg) {
     prevLat = currentlat;
     prevLong = currentLong;
     
+    
+      $("#mapResourceUpgrade").click(function(){
+                     document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
+                                 document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
+                        if(mapresourcescript<400){
+                            
+                        mapresourcescript++;
+                        resourcescript++;    
+                              alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong).toFixed(2));
+                        }     
+                    });
 }
 
 
