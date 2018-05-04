@@ -25,6 +25,15 @@ var bgColor = 0;
 
      
 $(document).ready(function(){
+    
+    document.addEventListener("deviceready", onDeviceReady, false);
+//exit button function
+function onDeviceReady() {
+                    document.getElementById('exitApp').addEventListener('click', function() {
+                        navigator.app.exitApp();
+                    });
+                }
+
                         
                         $("#themeChanger").click(function(){
                         if (bgColor == 1){
@@ -234,14 +243,7 @@ function deg2rad(deg) {
     watchID = navigator.geolocation.watchPosition(onLocationSuccess, onLocationFail)
     
  });
- document.addEventListener("deviceready", onDeviceReady, false);
-//exit button function
-function onDeviceReady() {
-                    document.getElementById('exitApp').addEventListener('click', function() {
-                        navigator.app.exitApp();
-                    });
-                }
-
+ 
 function onLocationSuccess(position) {
     
     loc = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
