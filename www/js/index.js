@@ -84,8 +84,8 @@ var mapresourcescript = 1;
   
 $("#mapResourceUpgrade").click(function(){
                      document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
-                                 document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
-                        if(mapresourcescript<400){
+                     document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
+                     if(mapresourcescript<400){
                             
                         mapresourcescript++;
                         resourcescript++;    
@@ -138,8 +138,10 @@ function onLocationSuccess(position) {
     currentLong = position.coords.longitude;
     
     alert(currentlat + ", " + currentLong);
+     
      mapresourcescript++;
-    
+     document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
+     document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
     //work out distance between prev and current
     //only if prev has a value
     
