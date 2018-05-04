@@ -77,7 +77,7 @@ var mapresourcescript = 1;
 
 
 $(document).on( "pageinit", "#scavResults", function() { 
-    watchID = 0
+    loc = 0
 });
 
 $(document).on( "pageinit", "#pagetwo", function() { 
