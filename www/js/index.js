@@ -22,11 +22,7 @@ var mapresourcescript = 1;
                         
 var bgColor = 0;
 
-
-     
-$(document).ready(function(){
-    
-    document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", onDeviceReady, false);
 //exit button function
 function onDeviceReady() {
                     document.getElementById('exitApp').addEventListener('click', function() {
@@ -34,6 +30,10 @@ function onDeviceReady() {
                     });
                 }
 
+     
+$(document).ready(function(){
+    
+    
                         
                         $("#themeChanger").click(function(){
                         if (bgColor == 1){
