@@ -22,13 +22,15 @@ var mapresourcescript = 1;
                         
 var bgColor = 0;
 
+// Wait for PhoneGap to load
 document.addEventListener("deviceready", onDeviceReady, false);
-//exit button function
+
 function onDeviceReady() {
-                    document.getElementById('exitApp').addEventListener('click', function() {
-                        navigator.app.exitApp();
-                    });
-                }
+    // alert("deviceready");
+    document.getElementById('exitApp').addEventListener('click', function() {
+        navigator.app.exitApp();
+    });
+}
 
      
 $(document).ready(function(){
