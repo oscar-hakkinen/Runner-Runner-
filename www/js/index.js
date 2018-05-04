@@ -68,16 +68,7 @@ var mapresourcescript = 1;
                         }     
                     });
      
-      $("#mapResourceUpgrade").click(function(){
-                     document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
-                                 document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
-                        if(mapresourcescript<400){
-                            
-                        mapresourcescript++;
-                        resourcescript++;    
-                              alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong).toFixed(2));
-                        }     
-                    });
+      
                           
                 });
 
@@ -109,7 +100,17 @@ function onLocationSuccess(position) {
     //only if prev has a value
    
   
-
+$("#mapResourceUpgrade").click(function(){
+                     document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
+                                 document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
+                        if(mapresourcescript<400){
+                            
+                        mapresourcescript++;
+                        resourcescript++;    
+                             
+                        }
+           alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong).toFixed(2));
+                    });
 
 
 function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
