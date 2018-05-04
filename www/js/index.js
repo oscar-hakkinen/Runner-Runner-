@@ -104,7 +104,7 @@ function onLocationSuccess(position) {
                         mapresourcescript++;
                         resourcescript++;    
                            
-    alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong).toFixed(2));    
+    alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong).toFixed(5));    
                         }     
                     });
 
