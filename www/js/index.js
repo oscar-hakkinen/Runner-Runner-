@@ -31,10 +31,12 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
      alert("deviceready");
-    document.getElementById('exitApp').addEventListener('click', function() {
-        navigator.app.exitApp();
-    });
+    $("#exitApp").click(function(){
+                        navigator.app.exitApp();
+                        });
 }
+    
+    
     
                         
                         $("#themeChanger").click(function(){
