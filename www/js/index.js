@@ -27,18 +27,17 @@ var bgColor = 0;
 $(document).ready(function(){
                 
 
-document.addEventListener("deviceready", onDeviceReady, false);
 
-function onDeviceReady() {
-     alert("deviceready");
-    $("#exitApp").click(function(){
-                        navigator.app.exitApp();
-                        });
-}
+
+  
     
     
     
                         
+      $("#exitApp").click(function(){
+                        navigator.app.exitApp();
+                        });
+    
                         $("#themeChanger").click(function(){
                         if (bgColor == 1){
                         bgColor = 0;
