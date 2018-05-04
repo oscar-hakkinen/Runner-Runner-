@@ -132,16 +132,13 @@ function onDeviceReady() {
 
 function onLocationSuccess(position) {
     
-    
-    
-    
     loc = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
     
     currentlat = position.coords.latitude;
     currentLong = position.coords.longitude;
     
     alert(currentlat + ", " + currentLong);
-    
+     mapresourcescript++;
     
     //work out distance between prev and current
     //only if prev has a value
@@ -180,11 +177,6 @@ function onLocationSuccess(position) {
     prevLat = currentlat;
     prevLong = currentLong;
 }
-
-
-
-
-
 
 
 function onLocationFail(error) {
