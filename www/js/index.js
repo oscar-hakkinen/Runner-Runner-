@@ -25,7 +25,7 @@ var bgColor = 0;
      
  $(document).ready(function(){
                         
-                          $("#themeChanger").click(function(){
+                        $("#themeChanger").click(function(){
                         if (bgColor == 1){
                         bgColor = 0;
                         document.getElementById("bg").style.background = "black";
@@ -36,7 +36,6 @@ var bgColor = 0;
                         $("H1").css("color", "black");    
                             };
                         });
-
                         $("#themeChanger2").click(function(){
                         if (bgColor == 1){
                         bgColor = 0;
@@ -52,8 +51,6 @@ var bgColor = 0;
                             $("p").css("color", "black"); 
                          };
                         });
-     
-     
                         $("#themeChanger3").click(function(){
                         if (bgColor == 1){
                             bgColor = 0;
@@ -69,7 +66,6 @@ var bgColor = 0;
                              $("p").css("color", "black"); 
                                 };
                             });
-     
                         $("#themeChanger4").click(function(){
                         if (bgColor == 1){
                             bgColor = 0;
@@ -96,6 +92,11 @@ var bgColor = 0;
                             scrapscript = 0;
                             resourcescript = 0;
                             mapresourcescript = 1;
+                             document.getElementById("foodAmount").innerHTML = "Food:" +foodscript + "/100";
+                             document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;
+                             document.getElementById("barricadeAmount").innerHTML = "Barricades:" +barricadescript + "/100";
+                             document.getElementById("armoryAmount").innerHTML = "Armory:" + armoryscript + "/100";
+                             document.getElementById("scrapAmount").innerHTML = "Scrap:" + scrapscript + "/100";
                         }); 
      
                         $("#deleteSave2").click(function(){
@@ -105,6 +106,11 @@ var bgColor = 0;
                             scrapscript = 0;
                             resourcescript = 0;
                             mapresourcescript = 1;
+                            document.getElementById("foodAmount").innerHTML = "Food:" +foodscript + "/100";
+                             document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;
+                             document.getElementById("barricadeAmount").innerHTML = "Barricades:" +barricadescript + "/100";
+                             document.getElementById("armoryAmount").innerHTML = "Armory:" + armoryscript + "/100";
+                             document.getElementById("scrapAmount").innerHTML = "Scrap:" + scrapscript + "/100";
                         }); 
      
                         $("#deleteSave3").click(function(){
@@ -114,6 +120,11 @@ var bgColor = 0;
                             scrapscript = 0;
                             resourcescript = 0;
                             mapresourcescript = 1;
+                            document.getElementById("foodAmount").innerHTML = "Food:" +foodscript + "/100";
+                             document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;
+                             document.getElementById("barricadeAmount").innerHTML = "Barricades:" +barricadescript + "/100";
+                             document.getElementById("armoryAmount").innerHTML = "Armory:" + armoryscript + "/100";
+                             document.getElementById("scrapAmount").innerHTML = "Scrap:" + scrapscript + "/100";
                         }); 
      
                         $("#deleteSave4").click(function(){
@@ -123,15 +134,15 @@ var bgColor = 0;
                             scrapscript = 0;
                             resourcescript = 0;
                             mapresourcescript = 1;
+                            document.getElementById("foodAmount").innerHTML = "Food:" +foodscript + "/100";
+                             document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;
+                             document.getElementById("barricadeAmount").innerHTML = "Barricades:" +barricadescript + "/100";
+                             document.getElementById("armoryAmount").innerHTML = "Armory:" + armoryscript + "/100";
+                             document.getElementById("scrapAmount").innerHTML = "Scrap:" + scrapscript + "/100";
                         }); 
         
                      
      
-                        if (bgColor == 1){
-                            document.getElementById("bg").style.background = "white";
-                        } else {
-                             document.getElementById("bg").style.background = "black";
-                        };
         
      
                      $("#foodUpgrade").click(function(){
