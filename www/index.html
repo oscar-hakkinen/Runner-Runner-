@@ -70,13 +70,14 @@
     
     <body>
         
-        <div class="background"></div>
+        <div id="bg" class="background" ></div>
         
         <div data-role="page" id="pageone"> 
     
             
             <div data-role="main" id="welcomeText">
                 <H1>Runner Runner!</H1>
+           
                 
                 <a href="#pagetwo" data-role="button">Start</a>
                 <a href="#navoptionsmain" data-role="button">options</a>  
@@ -88,16 +89,11 @@
                                 <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
                                 (The stay awake mode keeps your device from going to sleep mode. Warning this can affect your battery life.)</p>   
                                 </label>
-    
-                                <label for="flip-checkbox-2"><p>distance units: 
-                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Km" data-off-text="Miles" data-wrapper-class="custom-label-flipswitch"></p>
-                                </label>
-                        
-                                <input type="button" value="Delete Save"> 
+                                <input id="themeChanger" type="button" value="Change color scheme">
+                                <input id="deleteSave3" type="button" value="Delete Save"> 
                                 </div>
             
         </div>    
-                   
         <div data-role="page" id="pagetwo"> <!-- Scavenge page -->
             
                 <div data-role="main" class="ui-content">
@@ -151,11 +147,9 @@
                                 (The stay awake mode keeps your device from going to sleep mode. Warning this can affect your battery life.)</p>   
                                 </label>
     
-                                <label for="flip-checkbox-2"><p>distance units: 
-                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Km" data-off-text="Miles" data-wrapper-class="custom-label-flipswitch"></p>
-                                </label>
+                                 <input id="themeChanger2" type="button" value="Change color scheme">
                         
-                                <input type="button" value="Delete Save">   
+                                <input id="deleteSave2" type="button" value="Delete Save">   
                                 </div>
                                             </div>
                     <div data-role="footer" data-position="fixed">
@@ -174,15 +168,15 @@
          
           
         
-                    <div data-role="panel" id="myPanel3" data-display="overlay">
+                   <!-- <div data-role="panel" id="myPanel3" data-display="overlay">
                         <h2>Navigation Bar</h2>
                             <a href="#scavPage" data-role="button">New Scavenge</a> 
                             <a href="#pagetwo" data-role="button">Upgrade Page</a>
                             <a href="#navoptions3" data-role="button">Options</a>  
                              <a href="#pageone" data-role="button">Exit</a>
-                    </div> 
+                    </div> -->
              
-                     <div data-role="panel" id="navoptions3" data-display="overlay">
+                    <!-- <div data-role="panel" id="navoptions3" data-display="overlay">
                                 <label for="flip-checkbox-1"><p>Stay awake mode: 
                                 <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
                                 (The stay awake mode keeps your device from going to sleep mode. Warning this can affect your battery life.)</p>   
@@ -193,11 +187,11 @@
                                 </label>
                         
                                 <input type="button" value="Delete Save">   
-                                </div>    
+                                </div>   
                 
                     <div data-role="footer" data-position="fixed">
                         <a href="#myPanel3">Navigate</a>
-                    </div>
+                    </div> --> 
         </div>
         <div data-role="page" id="scavPage"> <!-- Scavenge page -->
             
@@ -225,11 +219,10 @@
                                 (The stay awake mode keeps your device from going to sleep mode. Warning this can affect your battery life.)</p>   
                                 </label>
     
-                                <label for="flip-checkbox-2"><p>distance units: 
-                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Km" data-off-text="Miles" data-wrapper-class="custom-label-flipswitch"></p>
-                                </label>
+                                 <input id="themeChanger3" type="button" value="Change color scheme">
                         
-                                <input type="button" value="Delete Save">   
+                        
+                                <input id="deleteSave" type="button" value="Delete Save">   
                                 </div>
             
                     <div data-role="footer" data-position="fixed">
@@ -267,12 +260,10 @@
                                 <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
                                 (The stay awake mode keeps your device from going to sleep mode. Warning this can affect your battery life.)</p>   
                                 </label>
-    
-                                <label for="flip-checkbox-2"><p>distance units: 
-                                <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Km" data-off-text="Miles" data-wrapper-class="custom-label-flipswitch"></p>
-                                </label>
+                                <input id="themeChanger4" type="button" value="Change color scheme">
                         
-                                <input type="button" value="Delete Save">   
+                        
+                                <input id="deleteSave4" type="button" value="Delete Save">   
                                 </div>
             
                     <div data-role="footer" data-position="fixed">

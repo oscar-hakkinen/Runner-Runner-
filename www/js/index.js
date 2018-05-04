@@ -20,12 +20,120 @@ var scrapscript = 0;
 var resourcescript = 0;
 var mapresourcescript = 1;
                         
-var mapPage = true;
+var bgColor = 0;
 
-
-// grid upgrade buttons
+     
  $(document).ready(function(){
-    
+                        
+                          $("#themeChanger").click(function(){
+                        if (bgColor == 1){
+                        bgColor = 0;
+                        document.getElementById("bg").style.background = "black";
+                        $("H1").css("color", "white");    
+                        }else{
+                        bgColor = 1;
+                        document.getElementById("bg").style.background = "white";  
+                        $("H1").css("color", "black");    
+                            };
+                        });
+
+                        $("#themeChanger2").click(function(){
+                        if (bgColor == 1){
+                        bgColor = 0;
+                        document.getElementById("bg").style.background = "black";
+                        $("H1").css("color", "white");     
+                        $("H2").css("color", "white");      
+                        $("p").css("color", "white");      
+                         }else{
+                         bgColor = 1;
+                         document.getElementById("bg").style.background = "white"; 
+                            $("H1").css("color", "black");   
+                            $("H2").css("color", "black");
+                            $("p").css("color", "black"); 
+                         };
+                        });
+     
+     
+                        $("#themeChanger3").click(function(){
+                        if (bgColor == 1){
+                            bgColor = 0;
+                            document.getElementById("bg").style.background = "black";
+                            $("H1").css("color", "white"); 
+                            $("H2").css("color", "white"); 
+                            $("p").css("color", "white"); 
+                             }else{
+                             bgColor = 1;
+                             document.getElementById("bg").style.background = "white"; 
+                             $("H1").css("color", "black");  
+                             $("H2").css("color", "black");
+                             $("p").css("color", "black"); 
+                                };
+                            });
+     
+                        $("#themeChanger4").click(function(){
+                        if (bgColor == 1){
+                            bgColor = 0;
+                            document.getElementById("bg").style.background = "black";
+                            $("H1").css("color", "white"); 
+                            $("H2").css("color", "white");  
+                            $("p").css("color", "white"); 
+                             }else{
+                             bgColor = 1;
+                             document.getElementById("bg").style.background = "white"; 
+                             $("H1").css("color", "black");   
+                             $("H2").css("color", "black"); 
+                             $("p").css("color", "black"); 
+                                };
+                            });
+
+     
+                  
+     
+                        $("#deleteSave").click(function(){
+                            foodscript = 0;
+                            barricadescript = 0;
+                            armoryscript = 0;
+                            scrapscript = 0;
+                            resourcescript = 0;
+                            mapresourcescript = 1;
+                        }); 
+     
+                        $("#deleteSave2").click(function(){
+                            foodscript = 0;
+                            barricadescript = 0;
+                            armoryscript = 0;
+                            scrapscript = 0;
+                            resourcescript = 0;
+                            mapresourcescript = 1;
+                        }); 
+     
+                        $("#deleteSave3").click(function(){
+                            foodscript = 0;
+                            barricadescript = 0;
+                            armoryscript = 0;
+                            scrapscript = 0;
+                            resourcescript = 0;
+                            mapresourcescript = 1;
+                        }); 
+     
+                        $("#deleteSave4").click(function(){
+                            foodscript = 0;
+                            barricadescript = 10;
+                            armoryscript = 0;
+                            scrapscript = 0;
+                            resourcescript = 0;
+                            mapresourcescript = 1;
+                        }); 
+        
+                     
+     
+                        if (bgColor == 1){
+                            document.getElementById("bg").style.background = "white";
+                        } else {
+                             document.getElementById("bg").style.background = "black";
+                        };
+        
+     
                      $("#foodUpgrade").click(function(){
                      document.getElementById("foodAmount").innerHTML = "Food:" +foodscript + "/100";
                      document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;
@@ -34,8 +142,7 @@ var mapPage = true;
                         resourcescript--;      
                         }     
                     });
-                         
-                    $("#barricadeUpgrade").click(function(){
+                     $("#barricadeUpgrade").click(function(){
                      document.getElementById("barricadeAmount").innerHTML = "Barricades:" +barricadescript + "/100";
                      document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;
                         if(barricadescript<100 && resourcescript>0){
@@ -43,8 +150,7 @@ var mapPage = true;
                         resourcescript--;      
                         }     
                     });   
-                          
-                    $("#armoryUpgrade").click(function(){
+                     $("#armoryUpgrade").click(function(){
                      document.getElementById("armoryAmount").innerHTML = "Armory:" + armoryscript + "/100";
                      document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;
                         if(armoryscript<100 && resourcescript>0){ 
@@ -52,8 +158,7 @@ var mapPage = true;
                        resourcescript--;          
                         }     
                     });  
-                         
-                  $("#scrapUpgrade").click(function(){
+                     $("#scrapUpgrade").click(function(){
                      document.getElementById("scrapAmount").innerHTML = "Scrap:" + scrapscript + "/100";
                      document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
                         if(scrapscript<100 && resourcescript>0){ 
@@ -61,8 +166,9 @@ var mapPage = true;
                        resourcescript--;    
                         }     
                     });
-     //resource upgrade test 
-                          $("#resourceUpgrade").click(function(){
+     
+                     //resource upgrade test 
+                     $("#resourceUpgrade").click(function(){
                      document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;
                         if(resourcescript<400){
                         resourcescript++;
@@ -72,19 +178,9 @@ var mapPage = true;
       
                           
                 });
-
-
-
-
-$(document).on( "pageinit", "#scavResults", function() { 
-mapPage = false
-});
-
 $(document).on( "pageinit", "#pagetwo", function() { 
  mapresourcescript = 0
 });
-
-
 $(document).on( "pageinit", "#pagethree", function() {
     
      
@@ -126,9 +222,7 @@ function deg2rad(deg) {
     watchID = navigator.geolocation.watchPosition(onLocationSuccess, onLocationFail)
     
  });
-
  document.addEventListener("deviceready", onDeviceReady, false);
-
 //exit button function
 function onDeviceReady() {
                     // alert("deviceready");
