@@ -192,6 +192,13 @@ var bgColor = 0;
 $(document).on( "pageinit", "#pagetwo", function() { 
  mapresourcescript = 0
 });
+//exit button function
+function onDeviceReady() {
+                    document.getElementById('exitApp').addEventListener('click', function() {
+                        navigator.app.exitApp();
+                    });
+                }
+
 $(document).on( "pageinit", "#pagethree", function() {
     
      
@@ -234,13 +241,7 @@ function deg2rad(deg) {
     
  });
  document.addEventListener("deviceready", onDeviceReady, false);
-//exit button function
-function onDeviceReady() {
-                    // alert("deviceready");
-                    document.getElementById('exitApp').addEventListener('click', function() {
-                        navigator.app.exitApp();
-                    });
-                }
+
 
 function onLocationSuccess(position) {
     
