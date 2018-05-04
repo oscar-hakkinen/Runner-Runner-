@@ -137,7 +137,9 @@ function onLocationSuccess(position) {
     currentlat = position.coords.latitude;
     currentLong = position.coords.longitude;
     
-    alert(currentlat + ", " + currentLong);
+    // alert(currentlat + ", " + currentLong);
+     mapresourcescript++;
+     resourcescript++;    
      
      mapresourcescript++;
      document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
