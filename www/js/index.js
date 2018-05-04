@@ -72,33 +72,15 @@ var mapresourcescript = 1;
                           
                 });
 
+
+
+
+
+
+
  $(document).on( "pageinit", "#pagethree", function() {
     
-    watchID = navigator.geolocation.watchPosition(onLocationSuccess, onLocationFail)
-    
- });
-
- document.addEventListener("deviceready", onDeviceReady, false);
-
-//exit button function
-function onDeviceReady() {
-                    // alert("deviceready");
-                    document.getElementById('exitApp').addEventListener('click', function() {
-                        navigator.app.exitApp();
-                    });
-                }
-
-function onLocationSuccess(position) {
-    
-    loc = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-    
-    currentlat = position.coords.latitude;
-    currentLong = position.coords.longitude;
-    
-    
-    //work out distance between prev and current
-    //only if prev has a value
-   
+     
   
 $("#mapResourceUpgrade").click(function(){
                      document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
@@ -131,6 +113,33 @@ function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
 function deg2rad(deg) {
   return deg * (Math.PI/180)
 }
+     
+     
+     
+    watchID = navigator.geolocation.watchPosition(onLocationSuccess, onLocationFail)
+    
+ });
+
+ document.addEventListener("deviceready", onDeviceReady, false);
+
+//exit button function
+function onDeviceReady() {
+                    // alert("deviceready");
+                    document.getElementById('exitApp').addEventListener('click', function() {
+                        navigator.app.exitApp();
+                    });
+                }
+
+function onLocationSuccess(position) {
+    
+    loc = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    
+    currentlat = position.coords.latitude;
+    currentLong = position.coords.longitude;
+    
+    
+    //work out distance between prev and current
+    //only if prev has a value
     
     
 
