@@ -67,6 +67,17 @@ var mapresourcescript = 1;
                         resourcescript++;
                         }     
                     });
+     
+      $("#mapResourceUpgrade").click(function(){
+                     document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
+                                 document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
+                        if(mapresourcescript<400){
+                            
+                        mapresourcescript++;
+                        resourcescript++;    
+                              alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong).toFixed(2));
+                        }     
+                    });
                           
                 });
 
@@ -121,9 +132,7 @@ function deg2rad(deg) {
 }
     
     
-    
-    
-    
+
     
     position.coords.latitude, position.coords.longitude
     
@@ -150,24 +159,11 @@ function deg2rad(deg) {
         
           position: {lat:position.coords.latitude, lng:position.coords.longitude}
         });
-     
    
     mapPath.setMap(map);
     
     prevLat = currentlat;
     prevLong = currentLong;
-    
-    
-      $("#mapResourceUpgrade").click(function(){
-                     document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
-                                 document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
-                        if(mapresourcescript<400){
-                            alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong).toFixed(2));
-                        mapresourcescript++;
-                        resourcescript++;    
-                              
-                        }     
-                    });
 }
 
 
