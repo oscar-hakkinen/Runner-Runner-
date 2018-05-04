@@ -77,7 +77,7 @@ var mapresourcescript = 1;
 
 
 $(document).on( "pageinit", "#scavResults", function() { 
-
+ document.removeEventListener("deviceready", onDeviceReady, false);
 });
 
 $(document).on( "pageinit", "#pagetwo", function() { 
@@ -147,13 +147,12 @@ function onLocationSuccess(position) {
      // alert(currentlat + ", " + currentLong);
      //  alert(prevLat + ", " + prevLong);
        
+    
+    //every time the listener ticks the code refreshes the values and add 1 more value into the resources.
      document.getElementById("mapResourceAmount").innerHTML = "You gained " + mapresourcescript + " resources.";
      document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;    
      mapresourcescript++;
      resourcescript++;    
-    //work out distance between prev and current
-    //only if prev has a value
-    
     
 
     
