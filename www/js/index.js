@@ -77,6 +77,10 @@ var mapresourcescript = 1;
 
 
 $(document).on( "pageinit", "#scavResults", function() { 
+
+});
+
+$(document).on( "pageinit", "#pagetwo", function() { 
  mapresourcescript = 0
 });
 
