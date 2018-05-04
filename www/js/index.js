@@ -162,10 +162,10 @@ function deg2rad(deg) {
                      document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
                                  document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;      
                         if(mapresourcescript<400){
-                            
+                            alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong).toFixed(2));
                         mapresourcescript++;
                         resourcescript++;    
-                              alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong).toFixed(2));
+                              
                         }     
                     });
 }
