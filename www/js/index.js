@@ -77,7 +77,7 @@ var mapresourcescript = 1;
 
 
 $(document).on( "pageinit", "#scavResults", function() { 
- document.removeEventListener("deviceready", onDeviceReady, false);
+    watchID = 0
 });
 
 $(document).on( "pageinit", "#pagetwo", function() { 
