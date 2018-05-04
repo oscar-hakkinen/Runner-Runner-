@@ -132,10 +132,15 @@ function onDeviceReady() {
 
 function onLocationSuccess(position) {
     
+    
+    
+    
     loc = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
     
     currentlat = position.coords.latitude;
     currentLong = position.coords.longitude;
+    
+    alert(currentlat + ", " + currentLong);
     
     
     //work out distance between prev and current
