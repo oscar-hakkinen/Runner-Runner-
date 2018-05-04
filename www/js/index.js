@@ -20,7 +20,7 @@ var scrapscript = 0;
 var resourcescript = 0;
 var mapresourcescript = 1;
                         
-
+var mapPage = true;
 
 
 // grid upgrade buttons
@@ -77,7 +77,7 @@ var mapresourcescript = 1;
 
 
 $(document).on( "pageinit", "#scavResults", function() { 
-    loc = 0
+mapPage = false
 });
 
 $(document).on( "pageinit", "#pagetwo", function() { 
@@ -85,7 +85,7 @@ $(document).on( "pageinit", "#pagetwo", function() {
 });
 
 
- $(document).on( "pageinit", "#pagethree", function() {
+$(document).on( "pageinit", "#pagethree", function() {
     
      
   
@@ -101,7 +101,7 @@ $(document).on( "pageinit", "#pagetwo", function() {
     //       alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong));
     //                });
 
-
+ 
 function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
   
     var R = 6371; // Radius of the earth in km
@@ -187,8 +187,6 @@ function onLocationSuccess(position) {
     prevLat = currentlat;
     prevLong = currentLong;
 }
-
-
 function onLocationFail(error) {
     console.log("Error: " + error.message);
 }
