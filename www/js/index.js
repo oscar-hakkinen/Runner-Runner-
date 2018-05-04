@@ -34,7 +34,7 @@ $(document).ready(function(){
     
     
                         
-      $("#exitApp").click(function(){
+                        $("#exitApp").click(function(){
                         navigator.app.exitApp();
                         });
     
