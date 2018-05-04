@@ -190,15 +190,6 @@ $(document).ready(function(){
       
                           
                 });
-$(document).on( "pageinit", "#pageone", function() { 
- 
-//exit button function
-function onDeviceReady() {
-                    document.getElementById('exitApp').addEventListener('click', function() {
-                        navigator.app.exitApp();
-                    });
-                }
-});
 $(document).on( "pageinit", "#pagetwo", function() { 
  mapresourcescript = 0
 });
@@ -244,7 +235,12 @@ function deg2rad(deg) {
     
  });
  document.addEventListener("deviceready", onDeviceReady, false);
-
+//exit button function
+function onDeviceReady() {
+                    document.getElementById('exitApp').addEventListener('click', function() {
+                        navigator.app.exitApp();
+                    });
+                }
 
 function onLocationSuccess(position) {
     
