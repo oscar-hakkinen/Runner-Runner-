@@ -137,12 +137,11 @@ function onLocationSuccess(position) {
     currentlat = position.coords.latitude;
     currentLong = position.coords.longitude;
     
-       alert(currentlat + ", " + currentLong);
-       alert(prevLat + ", " + prevLong);
-       alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong));
-     
+     // alert(currentlat + ", " + currentLong);
+     //  alert(prevLat + ", " + prevLong);
+       
      document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
-     document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;   
+     document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;    
      mapresourcescript++;
      resourcescript++;    
     //work out distance between prev and current
