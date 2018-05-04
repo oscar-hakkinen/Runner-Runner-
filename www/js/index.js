@@ -91,7 +91,7 @@ $("#mapResourceUpgrade").click(function(){
                         resourcescript++;    
                              
                         }
-           alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong).toFixed(2));
+           alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong));
                     });
 
 
