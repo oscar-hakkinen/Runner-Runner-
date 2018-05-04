@@ -139,9 +139,10 @@ function onLocationSuccess(position) {
     
        alert(currentlat + ", " + currentLong);
        alert(prevLat + ", " + prevLong);
+       alert(getDistanceFromLatLonInKm(prevLat,prevLong,currentlat,currentLong));
      
      document.getElementById("mapResourceAmount").innerHTML = "Resources:" + mapresourcescript;
-     document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;    
+     document.getElementById("resourceAmount").innerHTML = "Resources:" + resourcescript;   
      mapresourcescript++;
      resourcescript++;    
     //work out distance between prev and current
