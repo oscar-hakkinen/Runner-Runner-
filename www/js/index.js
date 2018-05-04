@@ -22,6 +22,13 @@ var mapresourcescript = 1;
                         
 var bgColor = 0;
 
+
+//exit button function
+function onDeviceReady() {
+                    document.getElementById('exitApp').addEventListener('click', function() {
+                        navigator.app.exitApp();
+                    });
+                }
      
  $(document).ready(function(){
                         
@@ -192,12 +199,7 @@ var bgColor = 0;
 $(document).on( "pageinit", "#pagetwo", function() { 
  mapresourcescript = 0
 });
-//exit button function
-function onDeviceReady() {
-                    document.getElementById('exitApp').addEventListener('click', function() {
-                        navigator.app.exitApp();
-                    });
-                }
+
 
 $(document).on( "pageinit", "#pagethree", function() {
     
