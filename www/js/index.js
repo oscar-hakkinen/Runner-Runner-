@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+// Wait for PhoneGap to load
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+    // alert("deviceready");
+    document.getElementById('exitApp').addEventListener('click', function() {
+        navigator.app.exitApp();
+    });
+}
 });
 
 var watchID;
@@ -22,15 +31,6 @@ var mapresourcescript = 1;
                         
 var bgColor = 0;
 
-// Wait for PhoneGap to load
-document.addEventListener("deviceready", onDeviceReady, false);
-
-function onDeviceReady() {
-    // alert("deviceready");
-    document.getElementById('exitApp').addEventListener('click', function() {
-        navigator.app.exitApp();
-    });
-}
 
      
 $(document).ready(function(){
